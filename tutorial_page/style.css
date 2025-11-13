@@ -1,0 +1,196 @@
+/* ---------- BASE STYLE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('../login_page/image.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgb(253, 0, 0);
+  box-shadow: 0 2px 10px #000;
+}
+
+.logo {
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ff0000;
+  background: #000;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #000;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main.tutorials {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main.tutorials h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+}
+
+main.tutorials p {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* ---------- CARD CONTAINER ---------- */
+.tutorial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* ---------- CARD STYLING ---------- */
+.tutorial-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 15px #000;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tutorial-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 0, 0, 0.85);
+}
+
+/* ---------- CARD HEADINGS ---------- */
+.tutorial-card h2 {
+  color: #ffffff;
+  background: #000;
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* ---------- LIST STYLES INSIDE CARD ---------- */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+ol {
+  margin: 10px 0 20px 25px;
+  list-style: decimal;
+  text-align: left;
+}
+
+ol li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+a {
+  color: #ffbdbd;
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ff0000;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main.tutorials h1 {
+    font-size: 2rem;
+  }
+
+  .tutorial-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .tutorial-card h2 {
+    font-size: 1.4rem;
+  }
+
+  ol li {
+    font-size: 0.95rem;
+  }
+}
